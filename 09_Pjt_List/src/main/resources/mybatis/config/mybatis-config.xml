@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	
+	<!-- settings  -->
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/> 
+ 	</settings>
+ 	
+ 	<!-- mapper에서 사용할 것으로 타입 기재해야 함. 도메인 패키지에 BbsDTO를 별칭을 Bbs라고 정했음. 꼭 안 해도 되는 작업-->
+ 	<typeAliases>
+ 		 <typeAlias alias="DeptDTO" type="com.gdu.app09.domain.DeptDTO" /> 
+ 		 <typeAlias alias="EmpDTO" type="com.gdu.app09.domain.EmpDTO" /> 
+	</typeAliases>
+  	
+  	
+	
+</configuration>
